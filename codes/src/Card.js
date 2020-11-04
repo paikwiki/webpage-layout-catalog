@@ -2,7 +2,7 @@ import { Component } from 'react';
 import tw, { styled } from 'twin.macro';
 import { css } from 'styled-components/macro'
 
-const CardWrapper = tw.div`p-4 pb-8 shadow-lg max-w-sm border-2 bg-white self-center md:self-start md:mr-4`;
+const CardWrapper = tw.div`mb-6 p-4 pb-8 shadow-lg max-w-sm border-2 bg-white self-center md:self-start md:mr-4`;
 
 const H2 = styled.h2`
   ${tw`font-semibold`}
