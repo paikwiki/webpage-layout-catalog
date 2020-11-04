@@ -3,3 +3,8 @@ html {
   padding: 1rem;
   background-color: #edf2f7;
 }
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}

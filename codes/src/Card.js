@@ -1,29 +1,33 @@
 import { Component } from 'react';
 import tw, { styled } from 'twin.macro';
+import { css } from 'styled-components/macro'
 
-const CardWrapper = tw.div`p-4 shadow-lg max-w-md border-2 bg-white`;
+const CardWrapper = tw.div`p-4 pb-8 shadow-lg max-w-md border-2 bg-white sm:self-center md:self-start`;
 
 const H2 = styled.h2`
-  ${tw`text-xl`}
+  ${tw`font-semibold`}
 `;
-
 const Button = styled.button`
-  ${tw`p-2 rounded bg-blue-500 hover:bg-blue-700 font-semibold text-white`}
+  ${tw`px-2 rounded bg-blue-500 hover:bg-blue-700 text-white`}
 `;
 
 class Card extends Component {
   render() {
     return (
-      <div>
-        <CardWrapper>
-          <figure>
-            <img src={this.props.image} alt={`${this.props.title}`} />
-          </figure>
-          <H2>{this.props.title}</H2>
-          <Button>Go to this website</Button>
-          <div>{this.props.description}</div>
-        </CardWrapper>
-      </div>
+      <CardWrapper>
+        <figure css={tw`pb-4`}>
+          <img src={this.props.image} alt={`${this.props.title}`} />
+        </figure>
+        <div css={tw`px-3`}>
+          <div css={tw`pb-2 flex flex-row`}>
+            <H2 css={tw`leading-8 flex-auto`}>{this.props.title}</H2>
+            <Button>Go to this website</Button>
+          </div>
+          <div css={tw`h-12`}>
+            <p>{this.props.description}</p>
+          </div>
+        </div>
+      </CardWrapper>
     );
   }
 }
