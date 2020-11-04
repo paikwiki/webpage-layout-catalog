@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
     <CustomH1>Hello CRA!</CustomH1>
-      <div css={tw`flex flex-grow flex-wrap sm:flex-col md:flex-row`}>
+      <div css={tw`md:w-content-md xl:w-content-lg m-auto flex flex-grow flex-wrap flex-col md:flex-row justify-items-center`}>
         <Card
           image="https://picsum.photos/640/360"
           title="Salvador Dalí"
