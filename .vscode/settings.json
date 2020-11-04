@@ -1,4 +1,5 @@
 {
 	"sass.lint.enable": true,
-	"easysass.compileAfterSave": false
+	"easysass.compileAfterSave": false,
+	"tailwindCSS.colorDecorators": "on"
 }
