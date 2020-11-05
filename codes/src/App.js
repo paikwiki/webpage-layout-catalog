@@ -1,14 +1,13 @@
 import './scss/App.scss';
 import Card from './Card';
+import Header from './Header';
 import tw from 'twin.macro';
 import { css } from 'styled-components/macro'
-
-const CustomH1 = tw.h1`pb-4 text-blue-500 text-2xl`;
 
 function App() {
   return (
     <div className="App">
-    <CustomH1>Hello CRA!</CustomH1>
+      <Header headingText="The painters"/>
       <div css={tw`md:w-content-md xl:w-content-lg m-auto flex flex-grow flex-wrap flex-col md:flex-row justify-items-center`}>
         <Card
           image="https://picsum.photos/640/360"
