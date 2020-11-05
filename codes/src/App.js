@@ -15,17 +15,17 @@ function App() {
           description="Hello, I am a description."
         />
         <Card
-          image="https://picsum.photos/640/360"
+          image="https://picsum.photos/960/540"
           title="Vincent van Gogh"
           description="Hello, I am a description."
         />
         <Card
-          image="https://picsum.photos/640/360"
+          image="https://picsum.photos/480/270"
           title="Pablo Picasso"
           description="Hello, I am a description."
         />
         <Card
-          image="https://picsum.photos/640/360"
+          image="https://picsum.photos/496/279"
           title="Gustav Klimt"
           description="Hello, I am a description."
         />
