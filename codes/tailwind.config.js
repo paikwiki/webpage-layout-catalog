@@ -15,6 +15,7 @@ module.exports = {
       md: '768px',
       lg: '1024px',
       xl: '1280px',
+      max: '1920px',
     },
     colors: {
       transparent: 'transparent',
@@ -452,8 +453,9 @@ module.exports = {
       '11/12': '91.666667%',
       full: '100%',
       screen: '100vw',
+      'content-max': '100rem',
       'content-lg': '75rem',
-      'content-md': '51rem'
+      'content-md': '51rem',
     }),
     zIndex: {
       auto: 'auto',
